@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maintenance - Kings Estate Agent</title>
+  <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo-wrap">
+      <div class="logo">
+        <img src="logo.png" alt="Kings Estate Logo">
+      </div>
+      <div>
+        <h1>Kings Estate Agent</h1>
+        <p>Premium Cloud Property Management Portal</p>
+      </div>
+    </div>
+
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="assets.html">Assets</a>
+      <a href="maintenance.html">Maintenance</a>
+      <a href="#" class="nav-btn">Schedule Job</a>
+    </nav>
+  </header>
+
+  <section class="features" style="padding-top:40px;">
+    <div class="section-title">
+      <span class="mini-label">Maintenance Management</span>
+      <h2>Track Internal and External Repairs</h2>
+      <p>Coordinate maintenance scheduling, assignment, monitoring, and completion across the organisation.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card" style="grid-column: span 2;">
+        <h3>Create Maintenance Request</h3>
+        <form style="display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:16px;">
+          <div>
+            <label>Asset</label>
+            <select style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+              <option>Dell Server</option>
+              <option>Apartment 2A</option>
+              <option>Office Printer</option>
+            </select>
+          </div>
+          <div>
+            <label>Maintenance Type</label>
+            <select style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+              <option>Preventive</option>
+              <option>Corrective</option>
+              <option>Inspection</option>
+            </select>
+          </div>
+          <div>
+            <label>Assigned To</label>
+            <select style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+              <option>Internal Staff</option>
+              <option>External Company</option>
+            </select>
+          </div>
+          <div>
+            <label>Date</label>
+            <input type="date" style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+          </div>
+          <div style="grid-column:1 / -1;">
+            <label>Description</label>
+            <textarea placeholder="Describe the issue or maintenance task" style="width:100%; min-height:90px; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;"></textarea>
+          </div>
+          <div style="grid-column:1 / -1;">
+            <button class="btn primary" type="button">Create Request</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">🛠️</div>
+        <h3>Maintenance Summary</h3>
+        <p>Internal repairs, outsourced jobs, and due maintenance tasks are monitored from one portal.</p>
+      </div>
+    </div>
+
+    <div class="feature-card" style="margin-top:28px;">
+      <h3>Maintenance Status</h3>
+      <div style="overflow-x:auto; margin-top:16px;">
+        <table style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">Job Ref</th>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">Asset</th>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">Assigned To</th>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">Status</th>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">Completion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">MNT-01</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Office Printer</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">External Company</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">In Progress</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">12/11/2025</td>
+            </tr>
+            <tr>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">MNT-02</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Apartment 2A</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Internal Staff</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Completed</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">09/11/2025</td>
+            </tr>
+            <tr>
+              <td style="padding:12px;">MNT-03</td>
+              <td style="padding:12px;">Dell Server</td>
+              <td style="padding:12px;">Internal Staff</td>
+              <td style="padding:12px;">Scheduled</td>
+              <td style="padding:12px;">14/11/2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kings Estate Agent | Maintenance Management Module</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assets - Kings Estate Agent</title>
+  <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo-wrap">
+      <div class="logo">
+        <img src="logo.png" alt="Kings Estate Logo">
+      </div>
+      <div>
+        <h1>Kings Estate Agent</h1>
+        <p>Premium Cloud Property Management Portal</p>
+      </div>
+    </div>
+
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="assets.html">Assets</a>
+      <a href="maintenance.html">Maintenance</a>
+      <a href="#" class="nav-btn">Add Asset</a>
+    </nav>
+  </header>
+
+  <section class="features" style="padding-top:40px;">
+    <div class="section-title">
+      <span class="mini-label">Asset Management</span>
+      <h2>Manage Enterprise Assets</h2>
+      <p>Register, monitor, categorize, and review assets across all Kings Estate Agent branches.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card" style="grid-column: span 2;">
+        <h3>Add New Asset</h3>
+        <form style="display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:16px;">
+          <div>
+            <label>Asset Code</label>
+            <input type="text" placeholder="AST-1001" style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+          </div>
+          <div>
+            <label>Asset Name</label>
+            <input type="text" placeholder="Dell Server" style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+          </div>
+          <div>
+            <label>Category</label>
+            <select style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+              <option>Buildings</option>
+              <option>Computers</option>
+              <option>Furniture</option>
+              <option>Vehicles</option>
+            </select>
+          </div>
+          <div>
+            <label>Branch</label>
+            <select style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+              <option>London</option>
+              <option>Birmingham</option>
+              <option>Manchester</option>
+            </select>
+          </div>
+          <div>
+            <label>Purchase Date</label>
+            <input type="date" style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+          </div>
+          <div>
+            <label>Purchase Cost</label>
+            <input type="number" placeholder="2500" style="width:100%; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;">
+          </div>
+          <div style="grid-column:1 / -1;">
+            <label>Description</label>
+            <textarea placeholder="Enter asset description" style="width:100%; min-height:90px; padding:12px; margin-top:6px; border:1px solid #dbe2ea; border-radius:12px;"></textarea>
+          </div>
+          <div style="grid-column:1 / -1;">
+            <button class="btn primary" type="button">Save Asset</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">📦</div>
+        <h3>Categories</h3>
+        <p>Buildings, computers, vehicles, office equipment, and furniture.</p>
+      </div>
+    </div>
+
+    <div class="feature-card" style="margin-top:28px;">
+      <h3>Asset Register</h3>
+      <div style="overflow-x:auto; margin-top:16px;">
+        <table style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">Asset ID</th>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">Name</th>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">Category</th>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">Branch</th>
+              <th style="padding:12px; text-align:left; background:#eef4fb;">State</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">AST-1001</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Dell Server</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Computers</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">London</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Active</td>
+            </tr>
+            <tr>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">AST-1002</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Apartment 2A</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Buildings</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">Birmingham</td>
+              <td style="padding:12px; border-bottom:1px solid #e5e7eb;">For Sale</td>
+            </tr>
+            <tr>
+              <td style="padding:12px;">AST-1003</td>
+              <td style="padding:12px;">Office Printer</td>
+              <td style="padding:12px;">Computers</td>
+              <td style="padding:12px;">Manchester</td>
+              <td style="padding:12px;">Maintenance</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kings Estate Agent | Asset Management Module</p>
+  </footer>
+</body>
+</html>
