@@ -97,7 +97,7 @@ body {
   min-height: 92vh;
   background:
     linear-gradient(rgba(10, 20, 40, 0.72), rgba(10, 20, 40, 0.82)),
-    url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80")
+    url("estate-bg.jpg.jpg")
     center/cover no-repeat;
   display: flex;
   align-items: center;
