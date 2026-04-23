@@ -1,71 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kings Estate Agent Portal</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kings Estate Agent Portal</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <header class="topbar">
+    <div class="logo-wrap">
+      <div class="logo">K</div>
+      <div>
+        <h1>Kings Estate Agent</h1>
+        <p>Premium Cloud Property Management Portal</p>
+      </div>
+    </div>
 
-<header>
-    <h1>Kings Estate Agent</h1>
-    <p>Cloud Property Management Portal</p>
-</header>
+    <nav class="topnav">
+      <a href="#features">Services</a>
+      <a href="#overview">Overview</a>
+      <a href="#stats">Insights</a>
+      <a href="#login" class="nav-btn">Sign In</a>
+    </nav>
+  </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Assets</a>
-    <a href="#">Maintenance</a>
-    <a href="#">Assessment</a>
-    <a href="#">Sales</a>
-    <a href="#">Reports</a>
-</nav>
+  <section class="hero">
+    <div class="hero-overlay"></div>
 
-<section class="container">
+    <div class="hero-content">
+      <div class="hero-left">
+        <span class="badge">Enterprise Cloud System</span>
+        <h2>Manage Properties, Assets, Maintenance, and Valuations in One Secure Portal</h2>
+        <p>
+          Kings Estate Agent uses a modern cloud platform to manage branch assets,
+          property records, maintenance services, assessments, and sales activities
+          with secure HTTPS access for internal staff and external service companies.
+        </p>
 
-<div class="card">
-    <h2>Secure Login</h2>
-    <form>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <button type="submit">Login</button>
-    </form>
-</div>
+        <div class="hero-actions">
+          <a href="#login" class="btn primary">Access Portal</a>
+          <a href="#features" class="btn secondary">Explore Features</a>
+        </div>
 
-<div class="card">
-    <h2>Dashboard</h2>
-    <p>Total Assets: 1245</p>
-    <p>Assets for Sale: 34</p>
-    <p>Maintenance Due: 18</p>
-</div>
+        <div class="hero-points">
+          <div class="point-card">
+            <h3>Secure</h3>
+            <p>HTTPS-based access with role-controlled portal usage.</p>
+          </div>
+          <div class="point-card">
+            <h3>Scalable</h3>
+            <p>Designed for multi-branch enterprise growth in the cloud.</p>
+          </div>
+          <div class="point-card">
+            <h3>Centralized</h3>
+            <p>One platform for assets, maintenance, valuation, and sales.</p>
+          </div>
+        </div>
+      </div>
 
-<div class="card">
-    <h2>Asset Management</h2>
-    <p>Add, update and monitor company assets.</p>
-</div>
+      <div class="hero-right">
+        <div class="login-card" id="login">
+          <div class="login-head">
+            <h3>Portal Login</h3>
+            <p>Secure access for authorized users</p>
+          </div>
 
-<div class="card">
-    <h2>Maintenance</h2>
-    <p>Schedule internal and external maintenance jobs.</p>
-</div>
+          <form>
+            <label>Email Address</label>
+            <input type="email" placeholder="name@kingsestate.co.uk" />
 
-<div class="card">
-    <h2>Assessment</h2>
-    <p>Record market value and valuation history.</p>
-</div>
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password" />
 
-<div class="card">
-    <h2>Sales</h2>
-    <p>Manage asset disposal and sales records.</p>
-</div>
+            <label>User Type</label>
+            <select>
+              <option>Administrator</option>
+              <option>Branch Manager</option>
+              <option>Accounts Officer</option>
+              <option>Maintenance Staff</option>
+              <option>External Company</option>
+            </select>
 
-</section>
+            <button type="submit" class="btn primary full">Sign In Securely</button>
+          </form>
 
-<footer>
-    <p>© Kings Estate Agent Cloud Portal</p>
-</footer>
+          <div class="secure-note">
+            <span>🔒</span>
+            <p>Protected with secure cloud-based access controls</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="stats-section" id="stats">
+    <div class="stat-box">
+      <h3>1,245</h3>
+      <p>Total Managed Assets</p>
+    </div>
+    <div class="stat-box">
+      <h3>34</h3>
+      <p>Assets Marked for Sale</p>
+    </div>
+    <div class="stat-box">
+      <h3>18</h3>
+      <p>Maintenance Tasks Due</p>
+    </div>
+    <div class="stat-box">
+      <h3>9</h3>
+      <p>External Service Requests</p>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="section-title">
+      <span class="mini-label">Main Modules</span>
+      <h2>Core Services of the Portal</h2>
+      <p>
+        The frontend prototype supports the major business processes identified in
+        the BPMN, UML class diagram, ERD, and cloud architecture.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">🏢</div>
+        <h3>Asset Management</h3>
+        <p>Register, update, monitor, and categorize enterprise assets across branches.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">🛠️</div>
+        <h3>Maintenance Management</h3>
+        <p>Schedule internal and outsourced maintenance activities with status tracking.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">📊</div>
+        <h3>Asset Assessment</h3>
+        <p>Record market value, periodic valuation history, and financial review details.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">🤝</div>
+        <h3>External Company Access</h3>
+        <p>Give controlled portal access to external maintenance companies and partners.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">💷</div>
+        <h3>Sales and Disposal</h3>
+        <p>Track assets marked for disposal, sold records, sale date, and buyer details.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon">📁</div>
+        <h3>Reports and Insights</h3>
+        <p>Generate branch, maintenance, valuation, and operational management reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="overview" id="overview">
+    <div class="section-title light">
+      <span class="mini-label">Why This System</span>
+      <h2>Enterprise System Overview</h2>
+      <p>
+        A cloud-based client-server solution designed for high availability,
+        centralized control, and secure remote access.
+      </p>
+    </div>
+
+    <div class="overview-grid">
+      <div class="overview-card">
+        <h3>Branch Operations</h3>
+        <ul>
+          <li>Centralized asset monitoring</li>
+          <li>Role-based staff access</li>
+          <li>Shared cloud services across all branches</li>
+        </ul>
+      </div>
+
+      <div class="overview-card">
+        <h3>Maintenance Workflow</h3>
+        <ul>
+          <li>Assign internal maintenance staff</li>
+          <li>Route outsourced jobs to external companies</li>
+          <li>Track status and service completion</li>
+        </ul>
+      </div>
+
+      <div class="overview-card">
+        <h3>Business Value</h3>
+        <ul>
+          <li>Improved decision-making</li>
+          <li>Real-time data visibility</li>
+          <li>Better control of asset lifecycle and costs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-box">
+      <h2>Ready to Access the Kings Estate Cloud Portal?</h2>
+      <p>
+        Secure, modern, and enterprise-ready frontend designed for the property
+        management information system.
+      </p>
+      <a href="#login" class="btn primary">Go to Login</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kings Estate Agent | Cloud Property Management Information System</p>
+  </footer>
 </body>
 </html>
